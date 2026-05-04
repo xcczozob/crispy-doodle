@@ -443,11 +443,3 @@ class FloatingNoteService : AppCompatActivity() {
         alarmReceiver?.let { unregisterReceiver(it) }
     }
 }
-
-class AlarmReceiver : BroadcastReceiver() {
-    override fun onReceive(context: Context, intent: Intent) {
-        // 发送广播通知主服务
-        val broadcastIntent = Intent("com.example.floatingnote.ALARM_ACTION")
-        context.sendBroadcast(broadcastIntent)
-    }
-}

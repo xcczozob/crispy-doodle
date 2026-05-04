@@ -17,6 +17,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.*
 import android.widget.*
+import com.example.floatingnote.R
 import java.text.SimpleDateFormat
 import java.util.*
 
